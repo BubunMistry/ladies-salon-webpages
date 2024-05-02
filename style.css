@@ -1,0 +1,187 @@
+*{
+
+    padding: 0;
+    margin: 0;
+}
+.nav-link{
+
+    color: #c7c7c7;
+
+}
+
+.nav-link:hover{
+
+    color: #fff;
+    
+    
+    }
+    .custom-toggler {
+        color: white;
+        border-color: 0.1px solid white; /* optional: if you want the border to be white as well */
+    }
+    
+
+#btn{
+ color: #c7c7c7;
+
+}
+#btn:hover{
+    color: #ffffff;
+   
+    }
+
+
+.bi,
+svg {
+    color: #c7c7c7;
+    cursor: pointer;
+}
+
+/* Override styles on hover */
+.bi:hover,
+svg:hover {
+    color: #ffffff;
+}
+
+#bbtn{
+    color: #000000;
+
+}
+#bbtn:hover{
+    color: #ffffff;
+
+}
+
+#readmore {
+    font-size: 10px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block; 
+    cursor: pointer;
+}
+
+#readmore::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Position the underline below the text */
+    width: 0; /* Initially start with no width */
+    height: 0.1px; /* Set the height of the underline */
+    background-color: rgb(133, 133, 133);
+    transition: width 0.3s ease; /* Add transition for width */
+}
+
+#readmore:hover::after {
+    width: 100%; /* Expand the width to 100% on hover */
+}
+
+.colored-line {
+    border: none;
+    height: 2px; /* Adjust the height of the line */
+    background-color: #d8b02d; /* Specify the color of the line */
+    margin: 20px 0; /* Adjust margin as needed */
+   
+}
+
+.h-100vh-lg {
+    height: 100vh;
+  }
+  
+  @media (max-width: 992px) {
+    .h-100vh-lg {
+      height: auto;
+    }
+    
+  }
+
+
+ 
+  .dropdown-menu {
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    color: white;
+    border: .5 px solid #000;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1.5rem;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+   
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+.dropdown:focus {
+    outline: none;
+}
+
+
+
+ /* Custom CSS for card hover effect */
+ .card {
+    overflow: hidden;
+    position: relative;
+}
+
+.card-img-overlay {
+
+   background-color: rgba(0, 0, 0, 0.39);
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    border-radius:10px;
+}
+
+.card:hover .card-img-overlay {
+    opacity: 0.7;cursor: pointer;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+/* Style the checkbox */
+.form-check-input {
+    background-color: #c7c7c7;
+    border: 1px solid black; /* Black border */
+   
+}
+
+/* Style the checkbox when checked */
+.form-check-input:checked {
+    background-color: #000000;
+    border-color: #000000; /* Match border color with background color */
+}
+
+/* Style the checkmark when checkbox is checked */
+.form-check-input:checked::after {
+    background-color: #000000;
+    box-shadow: none; /* Remove default blue shadow */
+}
